@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Nunito:wght@600;700&display=swap');
+
+
+:root {
+    --blue: rgb(0, 102, 203);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 163, 233);
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 450px;
+    min-width: 450px;
+    background-color: rgba(255,255,255, .15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+input {
+    font-size: 18px;
+    padding: 10px 10px 10px 0px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: white;
+    border:none ;
+    border-radius: 2px;
+    margin-left: 10px;
+    color: rgb(49, 147, 203);
+    font-weight: 600;
+    transition: all 350ms ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(49, 147, 203);
+    color: white;
+    transition: all 350ms ease-in-out;
+}
+
+.img-search {
+    width: 20px;
+}
+
+/* Please enter a city name */
+.msg-empty-input {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* HTML Javascript */
+
+.dati-meteo {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperatura {
+    color: white;
+    font-size: 40px;
+}
+
+.dati-meteo img {
+    width: 120px;
+}
+
+.dati-meteo h1 {
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.dati-meteo h3 {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.dati-meteo h2 {
+    font-weight: 800;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.max-min {
+    margin-top: 12px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+}
+
+.max-min h3 {
+    font-size: 12px;
+}
+
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color:  rgb(77, 176, 233);
+    border-radius: 100%;
+    position: absolute;
+    margin-right: 400px;
+    animation: MoveUpDown 4s linear infinite;
+}
+.circle2 {
+    width: 250px;
+    height: 250px;
+    background-color:  rgb(29, 124, 180);
+    border-radius: 100%;
+    position: absolute;
+    margin-left: 400px;
+    animation: MoveUpDown2 7s linear infinite;
+}
+
+@keyframes MoveUpDown2 {
+    0%, 100% {
+      bottom: 20px;
+    }
+    50% {
+      bottom: 120px;
+    }
+  }
+@keyframes MoveUpDown {
+    0%, 100% {
+      top: 80px;
+    }
+    50% {
+      top: 180px;
+    }
+  }
+
+  @media (max-width: 50em) {
+	body {
+		padding-inline: 10px;
+	}
+	.container {
+        width: 350px;
+        min-width: 350px;
+    }
+    .search-container {
+    	padding-inline: 10px;
+    }
+    input {
+        font-size: 14px;
+    }
+}
