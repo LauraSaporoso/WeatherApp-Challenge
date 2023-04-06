@@ -3,6 +3,8 @@
 
 🔥Viene tutto ricreato con codice Javascript.
 
+Per alcune città, esistendone diverse nel mondo, va specificato il paese, esempio: " Roma, It ".
+
 💻 Compito Challenge: Realizzazione app Meteo che indichi il nome della città, lo stato del tempo, la temperatura, la massima, la minima e il giorno in cui siamo.
 
 Regole:
